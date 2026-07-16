@@ -1,0 +1,6 @@
+{
+  "name": "Bright Smile Dental Care",
+  "description": "Premium & modern family dental clinic in the USA offering general dentistry, cosmetic services, implants, Invisalign, and 24/7 emergency care.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
