@@ -1,4 +1,4 @@
-import { Star, Mail, MapPin, Phone, Shield, Clock, Facebook, Instagram, Twitter, ExternalLink, Sparkles } from 'lucide-react';
+import { Star, Mail, MapPin, Phone, Clock, Facebook, Instagram, Twitter, ExternalLink, Sparkles } from 'lucide-react';
 import { ActiveTab } from '../types';
 
 interface FooterProps {
@@ -180,21 +180,22 @@ export default function Footer({ setCurrentTab }: FooterProps) {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
-            <span>© {currentYear} Bright Smile Dental Care Inc. All rights reserved.</span>
-            <span className="flex items-center gap-1">
-              <Shield size={12} className="text-teal-500" />
-              <span>HIPAA Compliant</span>
-            </span>
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-center md:text-left space-y-1.5">
+            <p className="text-sm font-semibold text-slate-200 tracking-wide">
+              © 2026 Bright Smile Dental Care. All Rights Reserved.
+            </p>
+            <p className="text-xs text-slate-500 font-medium font-mono">
+              Copyright © 2026 Azeem Ali.
+            </p>
           </div>
 
-          {/* Legal / Policy links */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500 font-sans">
-            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors">Privacy Policy</button>
-            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors">Terms of Service</button>
-            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors">Patient HIPAA Notice</button>
-            <button onClick={() => setCurrentTab('faq')} className="hover:text-teal-400 transition-colors">Accessibility Statement</button>
+          {/* Premium Legal Links */}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-400 font-sans font-medium">
+            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors duration-200 cursor-pointer">Privacy Policy</button>
+            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors duration-200 cursor-pointer">Terms of Service</button>
+            <button onClick={() => setCurrentTab('contact')} className="hover:text-teal-400 transition-colors duration-200 cursor-pointer">Patient HIPAA Notice</button>
+            <button onClick={() => setCurrentTab('faq')} className="hover:text-teal-400 transition-colors duration-200 cursor-pointer">Accessibility Statement</button>
           </div>
         </div>
       </div>
